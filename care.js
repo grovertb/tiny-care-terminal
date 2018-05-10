@@ -120,9 +120,9 @@ function doTheWeather() {
           forecastString = `Today, it will be ${skytextforecast} with a forecast high of ${forecast.high}°${degreetype} and a low of ${forecast.low}°${degreetype}.`;
         }
       }
-      weatherBox.content = `In ${json.location.name} it's ${json.current.temperature}°${degreetype} and ${skytext} right now. ${forecastString}`;
+      weatherBox.content = `En ${json.location.name} la temperatura es ${json.current.temperature}°${degreetype} y ${skytext} en este momento. ${forecastString}`;
     } else {
-      weatherBox.content = 'Having trouble fetching the weather for you :(';
+      weatherBox.content = 'Tengo problemas para obtener el clima para ti :(';
     }
   });
 }
