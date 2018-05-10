@@ -15,6 +15,9 @@ var chalk = require('chalk');
 var bunnySay = require('sign-bunny');
 var yosay = require('yosay');
 var weather = require('weather-js');
+var translate = require('translate');
+
+translate.from =  process.env.TTC_LANG ||'es'
 
 var inPomodoroMode = false;
 
@@ -120,7 +123,7 @@ function doTheWeather() {
           forecastString = `Today, it will be ${skytextforecast} with a forecast high of ${forecast.high}°${degreetype} and a low of ${forecast.low}°${degreetype}.`;
         }
       }
-      weatherBox.content = `En ${json.location.name} la temperatura es ${json.current.temperature}°${degreetype} y ${skytext} en este momento. ${forecastString}`;
+      weatherBox.content = `In ${json.location.name} it's ${json.current.temperature}°${degreetype} and ${skytext} right now. ${forecastString}`;
     } else {
       weatherBox.content = 'Tengo problemas para obtener el clima para ti :(';
     }
@@ -139,7 +142,7 @@ function doTheTweets() {
         screen.render();
       },function(error) {
         // Just in case we don't have tweets.
-        parrotBox.content = getAnsiArt('Hi! You\'re doing great!!!')
+        parrotBox.content = getAnsiArt('¡Hola! Lo estás haciendo genial!!!')
         screen.render();
       });
     } else {
@@ -378,3 +381,8 @@ var pomodoroHandlers = {
 }
 
 var pomodoroObject = pomodoro(pomodoroHandlers);
+
+
+const translater = async ctx => {
+  return await translate(ctx)
+}

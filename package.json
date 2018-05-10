@@ -18,8 +18,8 @@
     "blessed-contrib": "^4.7.5",
     "chalk": "^2.3.2",
     "git-user-name": "^2.0.0",
-    "gitlog": "^3.1.0",
     "git-utils": "^5.2.0",
+    "gitlog": "^3.1.0",
     "is-git": "1.0.0",
     "node-notifier": "^5.1.2",
     "resolve-dir": "^1.0.0",
@@ -27,6 +27,7 @@
     "shell-escape": "^0.2.0",
     "sign-bunny": "^1.0.0",
     "subdirs": "^1.0.1",
+    "translate": "^1.0.2",
     "twit": "^2.2.9",
     "weather-js": "^2.0.0",
     "yosay": "^2.0.0"
