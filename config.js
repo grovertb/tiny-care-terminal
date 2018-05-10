@@ -18,7 +18,7 @@ var config = {
 
   // Where to check the weather for.
   // It's using weather.service.msn.com behind the curtains.
-  weather: process.env.TTC_WEATHER || 'San Francisco',
+  weather: process.env.TTC_WEATHER || 'Lima',
 
   // Set to false if you're an imperial savage. <3
   celsius: (process.env.TTC_CELSIUS || 'true') === 'true',
