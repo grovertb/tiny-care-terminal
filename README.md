@@ -1,4 +1,7 @@
-# tiny-care-terminal
+# tiny-git-terminal
+
+### Project base on tiny-care-terminal
+
 This is a little dashboard that tries to take care of you when you're using your terminal.
 It tells you cute, self care things, and tries not to stress you out. It shows:
 - the last tweets from [@tinycarebot](https://twitter.com/tinycarebot),
@@ -22,7 +25,7 @@ It looks like this, and updates every 20 minutes.
 ### 1. Do the npm dance
 
 ```
-npm install -g tiny-care-terminal
+npm install -g tiny-git-terminal
 ```
 (Note: this currently doesn't work with `yarn` because of path shenanigans I wrote, so while I'm fixing that, pls use `npm` 🙏)
 
@@ -83,7 +86,7 @@ TTC_ACCESS_TOKEN_SECRET='...'
 
 ## 3. Start!
 ```
-tiny-care-terminal
+tiny-git-terminal
 ```
 You can exit the dashboard by pressing `esc` or `q`. You can refresh it
 manually by pressing `r`.
